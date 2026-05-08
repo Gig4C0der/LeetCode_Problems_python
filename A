@@ -1,4 +1,0 @@
-class Solution:
-    def isPalindrome(self, x: int) -> bool:
-        texto = str(x) #Se el agrera un str a x porque la funcion define a x como un entero y hay que pasarlo a string para usar slicing
-        return texto == texto[::-1]
