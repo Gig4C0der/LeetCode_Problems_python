@@ -1,0 +1,13 @@
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+      s = set(nums)
+      if len(s) == len(nums):
+         return False
+      else:
+         return True
+
+
+# Si la longitud original es distinta a la del set, hay duplicados.
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(nums) != len(set(nums)) #con esto le estamos diciendo "si la longitud original es diferente a la del set, entonces hay duplicados por ende devuelve True
