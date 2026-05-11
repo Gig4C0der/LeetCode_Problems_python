@@ -1,0 +1,8 @@
+class Solution:
+    def reverse(self, x: int) -> int:
+        
+        signo = 1 if x >= 0 else -1
+        invertido_str = str(abs(x))[::-1]
+        resultado = int(invertido_str) * signo
+        
+        if resultado < -2**31 or resultado > 2**31 - 1:
