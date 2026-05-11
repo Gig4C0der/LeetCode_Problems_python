@@ -1,0 +1,5 @@
+class Solution:
+    def rotateString(self, s: str, goal: str) -> bool:
+        return len(s) == len(goal) and goal in (s + s) #Devuelve True si la cantidad de letras en s es igual a la cantidad de letras en goal y si goal esta en s + s
+#len se utiliza para enumerar cuantas letras hay
+#(s + s) se usa para sumar dos string (Esto es para que se formen todas las combinaciones posibles)
