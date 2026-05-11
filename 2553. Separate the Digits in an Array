@@ -11,7 +11,9 @@ class Solution:
 
 
 #Mas eficiente y profesional
-a = list(map(str, nums))
-b = "".join(a)
-c = list(map(int, str(b)))
-return c
+class Solution:
+    def separateDigits(self, nums: List[int]) -> List[int]:
+         a = list(map(str, nums)) #Pasa la lista de enteros a string
+         b = "".join(a) #Elimina los corchetes, las comas y los espacios
+          c = list(map(int, str(b))) #Vuelve a pasar el string a entero
+          return c
