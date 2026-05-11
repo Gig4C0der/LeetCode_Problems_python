@@ -1,0 +1,17 @@
+class Solution:
+    def separateDigits(self, nums: List[int]) -> List[int]:
+         a = str(nums)
+         cleaned = a.strip("[]")
+         c = cleaned.replace(" ", "")
+         b = ''.join(str(c).split(','))
+         result = list(map(int, str(b[0:8])))  
+         return result
+
+
+
+
+#Mas eficiente y profesional
+a = list(map(str, nums))
+b = "".join(a)
+c = list(map(int, str(b)))
+return c
